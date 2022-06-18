@@ -13,8 +13,10 @@
     "test": "npm run test:html",
     "test:html": "html-validate *.html",
 
+    "build": "npm run build:* test",
     "build:sass": "sass --style=compressed --no-source-map sass:css",
-    "build:autoprefixer": "postcss css/*.css --use autoprefixer -d css"
+    "build:autoprefixer": "postcss css/*.css --use autoprefixer -d css",
+    "build-dev:sass": "sass --style=expanded --source-map sass:css"
   },
   "keywords": [],
   "author": "",
